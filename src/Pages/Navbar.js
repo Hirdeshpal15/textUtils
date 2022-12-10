@@ -21,6 +21,9 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact" >Contacts</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/partner" >Partners</Link>
+                            </li>
                         </ul>
                         <form className="form">
                             <button className="btn" type="submit">Enable</button>
