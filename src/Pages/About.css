@@ -2,6 +2,7 @@
   height: 45vh;
   width: 40vw;
   margin: 7vh 10vw;
+  animation: slide-left 1.2s ease;
 }
 
 .headerParagraphcontent h1 {
@@ -41,6 +42,7 @@
   margin-left: 20vw;
   height: 370px;
   width: 320px;
+  animation: slide-up 1.2s ease;
 }
 
 .deliveryImag h1 {
@@ -48,6 +50,7 @@
   align-items: center;
   max-width: 40vw;
   margin-right: 10vw;
+  animation: slide-down 1.2s ease;
 }
 
 .lastMile {
@@ -67,4 +70,40 @@
   margin-left: 10vw;
   height: 500px;
   width: 600px;
+}
+
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
